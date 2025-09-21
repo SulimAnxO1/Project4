@@ -1,5 +1,6 @@
 console.log("Hello World");
-let fullName = "MX";
+alert("Hello");
+fullName = "MX";
 console.log(fullName);
 let age = 22;
 age = 23;
@@ -8,6 +9,9 @@ console.log(age);
 console.log(age + 1);
 const PI = 3.14;
 console.log(PI);
+var cgpa = 2;
+var cgpa = 3;
+var cgpa = 4;
 {
   let a = 5;
   console.log(a);
@@ -16,8 +20,13 @@ console.log(PI);
   let a = 10;
   console.log(a);
 }
+let z = 3;
+let name = "Papon";
 let x = BigInt("123");
 let y = Symbol("Hello");
+isFollow = true;
+let a;
+let b = null;
 const student = {
   fullName: "Sulaiman",
   age: 22,
@@ -28,5 +37,4 @@ student["fullName"] = "Sulaiman Sufian";
 student["age"] = student["age"] + 1;
 console.log(student.age);
 console.log(student["cgpa"]);
-let name = "MX";
-console.log(name);
+"abcd" + 123;
