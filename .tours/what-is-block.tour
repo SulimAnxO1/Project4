@@ -1,6 +1,6 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "What is Block",
+  "title": "JS notes",
   "steps": [
     {
       "file": "firstjs.js",
@@ -19,7 +19,7 @@
     },
     {
       "file": "firstjs.js",
-      "description": "Let - a Veriable that cannot be re-declared but can be updated. (A block scope variable)",
+      "description": "Let - a Variable that cannot be re-declared but can be updated. (A block scope variable)",
       "line": 5
     },
     {
@@ -44,12 +44,12 @@
     },
     {
       "file": "firstjs.js",
-      "description": "Use {} to assign a block. Inside a block let or const cannot be appied twice",
+      "description": "Use {} to assign a block. Inside a block let or const cannot be applied twice",
       "line": 15
     },
     {
       "file": "firstjs.js",
-      "description": "\"3\" is a primitive data-type which is called Number. To see a data-type : typeof variablename\r\n(nubmers can be both positive & negetive.)",
+      "description": "\"3\" is a primitive data-type which is called Number. To see a data-type : typeof variablename\r\n(numbers can be both positive & negative.)",
       "line": 23
     },
     {
@@ -59,7 +59,7 @@
     },
     {
       "file": "firstjs.js",
-      "description": "\"123\" is a primitive data-type which is called Bining.(it will print as 123n) To see a data-type : typeof variablename",
+      "description": "\"123\" is a primitive data-type which is called BinIng.(it will print as 123n) To see a data-type : typeof variablename",
       "line": 25
     },
     {
@@ -79,7 +79,7 @@
     },
     {
       "file": "firstjs.js",
-      "description": "\"null\" is a primitive data-type which is called Null. To see a data-type : typeof variablename (typeof value will show object but it is a primitive data-type) Null is basicaly an absence of an object",
+      "description": "\"null\" is a primitive data-type which is called Null. To see a data-type : typeof variable name (typeof value will show object but it is a primitive data-type) Null is basically an absence of an object",
       "line": 29
     },
     {
@@ -101,6 +101,171 @@
       "file": "firstjs.js",
       "description": "\"abcd\" + 123 = \"abcd123\" \"123\" + 1 = \"1231\" but 123 + 1 = 124",
       "line": 40
+    },
+    {
+      "file": "firstjs.js",
+      "description": "This is printing the value of a & b  ",
+      "line": 48
+    },
+    {
+      "file": "firstjs.js",
+      "description": "If (\"a + b\") it will print  a + b not the sum but if (a + b) it will print sum. So, (\"a + b =\", a + b) will print a + b = sum",
+      "line": 49,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 126
+        }
+      }
+    },
+    {
+      "file": "firstjs.js",
+      "description": "Subtraction",
+      "line": 50
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\"*\" use for multiplication",
+      "line": 51
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\"/\" Used for division ",
+      "line": 52
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\"%\" Used for Modulus ",
+      "line": 53
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\"**\" is used of Exponentiation (a^b)",
+      "line": 54
+    },
+    {
+      "file": "firstjs.js",
+      "description": "This in Increment. Instead of a+1, a++ is use print value is the same. There are 2 uses of it ++a(preIncrement) & a++ (postIncrement)",
+      "line": 64,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 70
+        }
+      }
+    },
+    {
+      "file": "firstjs.js",
+      "description": "This in Decrement. Instead of a-1, a-- is use print value is the same. There are 2 uses of it a-- (post-decrement) & --a (pre-decrement)",
+      "line": 65
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\"+=\" is (a = a + x) ",
+      "line": 75
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\"-=\" is (a = a - x)",
+      "line": 78
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\"*=\" is (a = a * x) { \" * \" is multiplication }",
+      "line": 81
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\"/=\" is (a = a / x) {\"/\" is division}",
+      "line": 84
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\"%=\" is (a = a % x) {\"%\"  is modular}",
+      "line": 87
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\"**=\" is (a = a ^ x) ",
+      "line": 90
+    },
+    {
+      "file": "firstjs.js",
+      "description": "if there is string value it will still show true (string value get converted to number)",
+      "line": 97
+    },
+    {
+      "file": "firstjs.js",
+      "description": "Now it will be false cause its not getting converted to number",
+      "line": 98
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\"==\" (a = b)",
+      "line": 100
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\"===\" (a = b) true if a = x & b = x false if a = x b = \"x\"  ",
+      "line": 101
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\"!=\" (a not equal to b) ",
+      "line": 102
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\"!==\" (a not equal to b) true if a = x & b = x false if a = x & b = \"x\"",
+      "line": 103,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 72
+        }
+      }
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\">=\" (a is greater than or equal b) ",
+      "line": 104,
+      "selection": {
+        "start": {
+          "line": 1,
+          "character": 1
+        },
+        "end": {
+          "line": 1,
+          "character": 28
+        }
+      }
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\"<=\" (a is less than or equal to b) ",
+      "line": 105
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\">\" (a is greater than b)",
+      "line": 106
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\"<\" (a is less than b)",
+      "line": 107
     },
     {
       "file": "practice.js",

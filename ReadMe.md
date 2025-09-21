@@ -264,5 +264,157 @@ Printing objects to the console
 
 Checking types of objects and their properties using typeof
 
-ℹ️ Notes are added alongside line 16 & 17 in js code for clarity.
+ℹ️ Notes are added alongside line 16 & 17 in parctice.js for clarity.
 ```
+
+## ⚡ JavaScript Operators Practice
+
+This project contains **JavaScript practice examples** for:
+
+- Arithmetic Operators
+- Unary Operators
+- Assignment Operators
+- Comparison Operators
+- Using `typeof` to check data types
+
+Notes are added inline with some lines of code for clarity.
+
+---
+
+## 📘 Topics Covered
+
+### 1. Comments
+
+```js
+// Used for single-line comments
+/* Used for multi-line comments */
+```
+
+Arithmetic Operators
+
+let i = 5;
+let j = 2;
+
+console.log("a=", i, "b=", j);
+console.log("a + b =", i + j); // Addition
+console.log("a - b =", i - j); // Subtraction
+console.log("a _b =", i_ j); // Multiplication
+console.log("a / b =", i / j); // Division
+console.log("a % b =", i % j); // Modulus
+console.log("a **b =", i** j); // Exponentiation
+
+📝 Note:
+
+"a + b" (with quotes) → prints the text literally.
+
+(a + b) → prints the sum.
+
+("a + b =", a + b) → prints both text and result.
+
+Unary Operators (Increment & Decrement)
+
+i++; // same as i = i + 1
+console.log("++i =", ++i); // Pre-increment
+console.log("i++ =", i++); // Post-increment
+console.log("i =", i);
+
+i--; // same as i = i - 1
+console.log("--i =", --i); // Pre-decrement
+console.log("i-- =", i--); // Post-decrement
+console.log("i =", i);
+
+📝 Note:
+
+++i → increments first, then prints.
+
+i++ → prints first, then increments.
+
+Similarly for --i vs i--.
+
+Assignment Operators'
+
+i += 4; // i = i + 4
+i -= 4; // i = i - 4
+i _= 4; // i = i_ 4
+i /= 4; // i = i / 4
+i %= 4; // i = i % 4
+i **= 4; // i = i** 4
+
+Comparison Operators
+
+let a = 5;
+let b = "5"; // string
+
+console.log(a == b); // true → values are equal (type conversion happens)
+console.log(a === b); // false → checks value + type (strict equality)
+console.log(a != b); // false → values are same
+console.log(a !== b); // true → value same but type different
+
+console.log(a >= b); // true
+console.log(a <= b); // true
+console.log(a > b); // false
+console.log(a < b); // false
+
+📝 Note:
+
+== allows type conversion (string "5" → number 5).
+
+=== does not allow conversion → strict comparison.
+
+🧠 Key Takeaways
+
+JavaScript operators simplify arithmetic, assignment, and comparisons.
+
+Increment (++) and decrement (--) operators have pre and post behaviors.
+
+== vs ===:
+
+== → checks only value (loose equality).
+
+=== → checks value and type (strict equality).
+
+📊 Quick Reference Tables
+
+Arithmetic Operators
+
+| Operator | Meaning             | Example  | Result |
+| -------- | ------------------- | -------- | ------ |
+| `+`      | Addition            | `5 + 2`  | `7`    |
+| `-`      | Subtraction         | `5 - 2`  | `3`    |
+| `*`      | Multiplication      | `5 * 2`  | `10`   |
+| `/`      | Division            | `5 / 2`  | `2.5`  |
+| `%`      | Modulus (remainder) | `5 % 2`  | `1`    |
+| `**`     | Exponentiation      | `5 ** 2` | `25`   |
+
+Increment & Decrement
+
+| Operator | Description    | Example    | Result                 |
+| -------- | -------------- | ---------- | ---------------------- |
+| `++i`    | Pre-increment  | `i=5; ++i` | `6`                    |
+| `i++`    | Post-increment | `i=5; i++` | prints `5`, then `i=6` |
+| `--i`    | Pre-decrement  | `i=5; --i` | `4`                    |
+| `i--`    | Post-decrement | `i=5; i--` | prints `5`, then `i=4` |
+
+Assignment Operators
+
+| Operator | Equivalent   | Example      | Result |
+| -------- | ------------ | ------------ | ------ |
+| `+=`     | `a = a + b`  | `a=5; a+=2`  | `7`    |
+| `-=`     | `a = a - b`  | `a=5; a-=2`  | `3`    |
+| `*=`     | `a = a * b`  | `a=5; a*=2`  | `10`   |
+| `/=`     | `a = a / b`  | `a=5; a/=2`  | `2.5`  |
+| `%=`     | `a = a % b`  | `a=5; a%=2`  | `1`    |
+| `**=`    | `a = a ** b` | `a=5; a**=2` | `25`   |
+
+Comparison Operators
+
+| Operator | Description        | Example     | Result  |
+| -------- | ------------------ | ----------- | ------- |
+| `==`     | Equal (loose)      | `5 == "5"`  | `true`  |
+| `===`    | Equal (strict)     | `5 === "5"` | `false` |
+| `!=`     | Not equal (loose)  | `5 != "5"`  | `false` |
+| `!==`    | Not equal (strict) | `5 !== "5"` | `true`  |
+| `>`      | Greater than       | `5 > 2`     | `true`  |
+| `<`      | Less than          | `5 < 2`     | `false` |
+| `>=`     | Greater or equal   | `5 >= 5`    | `true`  |
+| `<=`     | Less or equal      | `5 <= 2`    | `false` |
