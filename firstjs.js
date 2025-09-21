@@ -1,5 +1,5 @@
 console.log("Hello World");
-FullName = "MX";
-console.log(FullName);
-Age = 22;
-console.log(Age);
+let fullName = "MX";
+console.log(fullName);
+var age = 22;
+console.log(age);
