@@ -4,8 +4,98 @@
   "steps": [
     {
       "file": "firstjs.js",
-      "description": "Use {} to assign a block inside a block let or const cannot be appied twice",
+      "description": "console.log (\"text\"); this is used to print a message.",
+      "line": 1
+    },
+    {
+      "file": "firstjs.js",
+      "description": "alert(\"text\"); this is used for popups on websites.",
+      "line": 2
+    },
+    {
+      "file": "firstjs.js",
+      "description": "fullName is a key and MX is a value. Note \r\n🐪 Naming Conventions\r\nStyle\t    Example\t  Valid in JS?\t   Notes\r\ncamelCase\tfullName\t✅ Yes\t  ✅ Common for variables & functions\r\nPascalCase\tFullName\t✅ Yes\t  ✅ Used for classes/constructors\r\nsnake_case\tfull_name\t✅ Yes\t  Rare in JS, but valid\r\nkebab-case\tfull-name\t❌ No\t  ❌ Not allowed in variables\r\nlowercase\tfullname\t✅ Yes\t  Valid but less readable",
+      "line": 3
+    },
+    {
+      "file": "firstjs.js",
+      "description": "Let - a Veriable that cannot be re-declared but can be updated. (A block scope variable)",
+      "line": 5
+    },
+    {
+      "file": "firstjs.js",
+      "description": "added to update the age from 22 to 24 ",
+      "line": 7
+    },
+    {
+      "file": "firstjs.js",
+      "description": "Adds +1 then shows the Result. In this case If age = 24 then the result shown will be 25",
+      "line": 9
+    },
+    {
+      "file": "firstjs.js",
+      "description": "const - a Variable that cannot be re-declared or updated. (A block scope variable) Values must be assigned or will show error.",
       "line": 10
+    },
+    {
+      "file": "firstjs.js",
+      "description": "var - a Variable that can be re-declared & updated. (A global scope variable) This variable is outdated and not recommended to use in code it causes confusion.",
+      "line": 12
+    },
+    {
+      "file": "firstjs.js",
+      "description": "Use {} to assign a block. Inside a block let or const cannot be appied twice",
+      "line": 15
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\"3\" is a primitive data-type which is called Number. To see a data-type : typeof variablename\r\n(nubmers can be both positive & negetive.)",
+      "line": 23
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\"Papon\" is a primitive data-type which is called String. To see a data-type : typeof variablename ",
+      "line": 24
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\"123\" is a primitive data-type which is called Bining.(it will print as 123n) To see a data-type : typeof variablename",
+      "line": 25
+    },
+    {
+      "file": "firstjs.js",
+      "description": "'Symbol (\"Hello\")' is a primitive data-type which is called Symbol.{it will print as Symbol (hello!)} To see a data-type : typeof variablename",
+      "line": 26
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\"true\" is a primitive data-type which is called Boolean. To see a data-type : typeof variablename",
+      "line": 27
+    },
+    {
+      "file": "firstjs.js",
+      "description": "here is a primitive data-type which is called Undefined. To see a data-type : typeof variablename(if there is no value added it will be printed as undefined)",
+      "line": 28
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\"null\" is a primitive data-type which is called Null. To see a data-type : typeof variablename (typeof value will show object but it is a primitive data-type) Null is basicaly an absence of an object",
+      "line": 29
+    },
+    {
+      "file": "firstjs.js",
+      "description": "Inside the block There is a collection of data this it's a Non-primitive data-type which is called Object.\r\n(Arrays, Functions are Object)\r\n",
+      "line": 30
+    },
+    {
+      "file": "firstjs.js",
+      "description": "in const object key is change able ",
+      "line": 36
+    },
+    {
+      "file": "firstjs.js",
+      "description": "console.log(student.age);\r\nconsole.log(student[\"cgpa\"]);\r\nThese are 2 ways to print values from block.",
+      "line": 39
     }
   ],
   "ref": "main"
