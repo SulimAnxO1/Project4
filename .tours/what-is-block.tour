@@ -1,0 +1,12 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "What is Block",
+  "steps": [
+    {
+      "file": "firstjs.js",
+      "description": "Use {} to assign a block inside a block let or const cannot be appied twice",
+      "line": 10
+    }
+  ],
+  "ref": "main"
+}
