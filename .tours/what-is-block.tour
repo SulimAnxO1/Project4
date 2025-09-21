@@ -96,6 +96,11 @@
       "file": "firstjs.js",
       "description": "console.log(student.age);\r\nconsole.log(student[\"cgpa\"]);\r\nThese are 2 ways to print values from block.",
       "line": 39
+    },
+    {
+      "file": "firstjs.js",
+      "description": "\"abcd\" + 123 = \"abcd123\" \"123\" + 1 = \"1231\" but 123 + 1 = 124",
+      "line": 40
     }
   ],
   "ref": "main"

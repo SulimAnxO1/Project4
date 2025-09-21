@@ -1,35 +1,47 @@
 # 📘 JavaScript Notes & Examples
 
-This document contains **basic JavaScript notes** with examples.
+This project demonstrates the basics of **JavaScript variables, data types, and objects** with examples.
 
 ---
 
-## 🔔 Alerts & Console
+## 🔔 Console & Alerts
 
-```js
-// Popup alert
-alert("Hello!");
+````js
+console.log("Hello World"); // prints a message to console
+alert("Hello");             // shows a popup alert
 
-// Print a message to console
-console.log("Hello World");
-let age = 22;
-console.log(age); // 22
+📝 Variables
+ Example
 
-age = 23; // updating value
-console.log(age); // 23
-
-const PI = 3.14; // must have value assigned
-console.log(PI);
+fullName = "MX"; // key = fullName, value = "MX"
+console.log(fullName);
 
 Variable Types
 
-var → Can be re-declared & updated. Function/global scope (not recommended).
+let → Cannot be re-declared, but can be updated. Block scope.
 
-let → Cannot be re-declared, but can be updated. Block scope (recommended).
+const → Cannot be re-declared or updated. Must be assigned a value. Block scope.
 
-const → Cannot be re-declared or updated. Block scope, must be assigned a value.
+var → Can be re-declared & updated. Function/global scope (❌ outdated, not recommended).
 
-// Block scope
+let age = 22;
+age = 23;
+age = 24;
+console.log(age);    // 24
+console.log(age + 1); // 25
+
+const PI = 3.14;
+console.log(PI);
+
+var cgpa = 2;
+var cgpa = 3;
+var cgpa = 4;
+console.log(cgpa); // 4
+
+🧩 Block Scope
+
+Use {} to create a block. Inside a block, let or const cannot be declared twice.
+
 {
   let a = 5;
   console.log(a); // 5
@@ -38,101 +50,132 @@ const → Cannot be re-declared or updated. Block scope, must be assigned a valu
   let a = 10;
   console.log(a); // 10
 }
-🐪 Naming Conventions
 
-fullName → ✅ camelCase (commonly used)
-
-fullname → ❌ not readable
-
-FullName → ✅ PascalCase (used for classes)
-
-full-name → ❌ invalid in JS (kebab-case not allowed)
-
-full_name → ✅ valid but uncommon (snake_case)
-
-🔢 Data Types in JavaScript
-
+🔢 Data Types
 Primitive Data Types
+let z = 3;               // Number
+let name = "Papon";      // String
+let x = BigInt("123");   // BigInt → prints as 123n
+let y = Symbol("Hello"); // Symbol → prints as Symbol(Hello)
+isFollow = true;         // Boolean
+let a;                   // Undefined
+let b = null;            // Null
 
-String → "MX"
+Notes
 
-Number → 1323
+Number → integers & decimals.
 
-Boolean → true / false
+String → text values.
 
-Undefined → variable declared but no value
+BigInt → very large integers (123n).
 
-Null → null (special value, but typeof shows "object")
+Symbol → unique identifier (Symbol("Hello")).
 
-BigInt → 123n or BigInt("123")
-let x = BigInt("123");
+Boolean → true/false.
 
-Symbol → Symbol("Hello")
-let y = Symbol("Hello");
+Undefined → declared but no value.
+
+Null → intentional empty value (typeof null returns "object", but it’s a primitive).
+
 
 Non-Primitive Data Types
 
-Objects → collections of values (arrays, functions, objects)
+Objects → Collections of key-value pairs (arrays, functions are also objects).
+
 const student = {
   fullName: "Sulaiman",
   age: 22,
   cgpa: 9,
   isPass: true,
 };
-// Update object properties
-student.fullName = "Sulaiman Sufian";
-student.age = student.age + 1;
-console.log(student.age);  // 23
-console.log(student.cgpa); // 9
+
+// Update object values
+student["fullName"] = "Sulaiman Sufian";
+student["age"] = student["age"] + 1;
+
+console.log(student.age);    // 23
+console.log(student["cgpa"]); // 9
 
 
-// Alerts & Console
-alert("Hello!");
-console.log("Hello World");
+🐪 Naming Conventions
 
-// Variables
-let fullName = "MX";
-console.log(fullName);
+| Style       | Example     | Valid in JS? | Notes                            |
+| ----------- | ----------- | ------------ | -------------------------------- |
+| camelCase   | `fullName`  | ✅ Yes        | Common for variables & functions |
+| PascalCase  | `FullName`  | ✅ Yes        | Used for classes/constructors    |
+| snake\_case | `full_name` | ✅ Yes        | Valid but uncommon               |
+| kebab-case  | `full-name` | ❌ No         | Not allowed in JS variables      |
+| lowercase   | `fullname`  | ✅ Yes        | Valid but less readable          |
 
-let age = 22;
-age = 23;
-age = 24;
-console.log(age);
+➕ Type Coercion
 
-const PI = 3.14;
-console.log(PI);
+console.log("abcd" + 123); // "abcd123"
+console.log("123" + 1);    // "1231"
+console.log(123 + 1);      // 124
 
-// Block scope demo
-{
-  let a = 5;
-  console.log(a);
-}
-{
-  let a = 10;
-  console.log(a);
-}
 
-// BigInt & Symbol
-let x = BigInt("123");
-let y = Symbol("Hello");
+## 📊 Quick Reference: `typeof`
 
-// Object
-const student = {
-  fullName: "Sulaiman",
-  age: 22,
-  cgpa: 9,
-  isPass: true,
-};
-student.fullName = "Sulaiman Sufian";
-student.age = student.age + 1;
-console.log(student.age);
-console.log(student.cgpa);
-// Adding 1 to age
-let age = 22;
-console.log(age + 1); // 23
+| Example                  | Value / Output      | `typeof` Result |
+|--------------------------|---------------------|-----------------|
+| `let x = 123;`           | `123`               | `"number"`      |
+| `let y = "MX";`          | `"MX"`              | `"string"`      |
+| `let z = true;`          | `true`              | `"boolean"`     |
+| `let a;`                 | `undefined`         | `"undefined"`   |
+| `let b = null;`          | `null`              | `"object"` (special case) |
+| `let big = 123n;`        | `123n`              | `"bigint"`      |
+| `let sym = Symbol("Hi");`| `Symbol(Hi)`        | `"symbol"`      |
+| `const obj = {};`        | `{}`                | `"object"`      |
+| `const arr = [];`        | `[]`                | `"object"`      |
+| `function f() {}`        | `f()`               | `"function"`    |
 
-// Printing variable
-let name = "MX";
-console.log(name);
+---
 
-```
+### 🏃 Test in Console
+
+```js
+let x = 123;
+console.log(typeof x); // "number"
+
+let y = "MX";
+console.log(typeof y); // "string"
+
+let z = true;
+console.log(typeof z); // "boolean"
+
+let a;
+console.log(typeof a); // "undefined"
+
+let b = null;
+console.log(typeof b); // "object"
+
+let big = 123n;
+console.log(typeof big); // "bigint"
+
+let sym = Symbol("Hi");
+console.log(typeof sym); // "symbol"
+
+const obj = {};
+console.log(typeof obj); // "object"
+
+const arr = [];
+console.log(typeof arr); // "object"
+
+function f() {}
+console.log(typeof f); // "function"
+
+````
+
+## 📝 Summary
+
+This file covers:
+
+- Printing messages (`console.log`) and popups (`alert`)
+- Variables (`var`, `let`, `const`) and their scope
+- Naming conventions (camelCase, PascalCase, snake_case, kebab-case ❌)
+- Primitive and non-primitive data types
+- Objects and how to update their properties
+- Examples of type coercion (`"abcd" + 123`)
+- `typeof` operator results for quick reference
+
+ℹ️ Notes are also added on the side of some lines in the code for extra explanation.
