@@ -179,3 +179,90 @@ This file covers:
 - `typeof` operator results for quick reference
 
 ℹ️ Notes are also added on the side of some lines in the code for extra explanation.
+
+## 📝 Practice JavaScript – Objects & `typeof`
+
+This project is a **JavaScript practice file** focused on working with **objects** and the **`typeof` operator**.  
+It demonstrates how to create objects, access properties, and check their data types.
+
+---
+
+## 📦 Code Examples
+
+### 1. Product Object
+
+```js
+const product = {
+  title: "Ball Pen",
+  rating: 3.45,
+  offer: 50,
+  price: 250,
+};
+
+console.log(product);
+
+✅ This creates an object called product with multiple key-value pairs:
+
+title → String
+
+rating → Number (float)
+
+offer → Number (integer, percentage)
+
+price → Number
+
+const profile = {
+  username: "@suliman",
+  isFollow: false,
+  followers: 1000,
+  following: 123,
+};
+
+✅ This defines a user profile with:
+
+username → String
+
+isFollow → Boolean
+
+followers → Number
+
+following → Number
+
+Using typeof
+
+console.log(typeof profile);
+// 📝 Prints "object" → profile is an object
+
+console.log(typeof profile["username"]);
+// 📝 Prints "string" → username property is a string
+
+The typeof operator is useful for checking data types in JavaScript.
+
+Objects → "object"
+
+Strings → "string"
+
+Numbers → "number"
+
+Booleans → "boolean"
+
+🧠 Key Takeaways
+
+Objects in JavaScript store multiple related values as key-value pairs.
+
+The typeof operator tells you the data type of a value.
+
+Even arrays and functions are technically objects in JavaScript.
+
+📝 Summary
+
+This practice covers:
+
+Creating objects with multiple properties
+
+Printing objects to the console
+
+Checking types of objects and their properties using typeof
+
+ℹ️ Notes are added alongside line 16 & 17 in js code for clarity.
+```

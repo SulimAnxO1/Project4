@@ -98,6 +98,11 @@
       "line": 39
     },
     {
+      "file": "firstjs.js",
+      "description": "\"abcd\" + 123 = \"abcd123\" \"123\" + 1 = \"1231\" but 123 + 1 = 124",
+      "line": 40
+    },
+    {
       "file": "practice.js",
       "description": "Can see the typeof using this. It prints object.",
       "line": 16,
@@ -116,11 +121,6 @@
       "file": "practice.js",
       "description": "Can see the typeof using this. It prints string.",
       "line": 17
-    },
-    {
-      "file": "firstjs.js",
-      "description": "\"abcd\" + 123 = \"abcd123\" \"123\" + 1 = \"1231\" but 123 + 1 = 124",
-      "line": 40
     }
   ],
   "ref": "main"
