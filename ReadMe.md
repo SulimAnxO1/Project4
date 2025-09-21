@@ -281,7 +281,7 @@ Notes are added inline with some lines of code for clarity.
 
 ---
 
-## 📘 Topics Covered
+## 📘 Topics Covered: Logical & Conditional Operators
 
 ### 1. Comments
 
@@ -418,3 +418,182 @@ Comparison Operators
 | `<`      | Less than          | `5 < 2`     | `false` |
 | `>=`     | Greater or equal   | `5 >= 5`    | `true`  |
 | `<=`     | Less or equal      | `5 <= 2`    | `false` |
+
+## 🔀 JavaScript Logical & Conditional Operators Practice
+
+This project demonstrates **logical operators**, **conditional statements**, **ternary operators**, and **switch statements** in JavaScript.  
+Inline notes are included for clarity and best practices.
+
+---
+
+## 📘 Topics Covered
+
+### 1. Logical Operators
+
+```js
+let a = 6;
+let b = 5;
+
+// Example with OR
+console.log("cond1 || con
+
+💡 Notes:
+
+&& → true if both conditions are true.
+
+|| → true if at least one condition is true.
+
+! → negates the result.
+
+Conditional Statements
+
+Basic if
+
+let age = 18;
+
+if (age >= 18) {
+  console.log("Exit");
+}
+if (age < 18) {
+  console.log("Enter");
+}
+
+Dark Mode Example
+
+let mode = "dark";
+let color;
+
+if (mode === "dark") {
+  color = "black";
+}
+if (mode === "light") {
+  color = "white";
+}
+console.log(color);
+
+If...Else
+
+if (mode === "dark") {
+  color = "black";
+} else {
+  color = "white";
+}
+
+Odd or Even
+
+let num = 10;
+
+if (num % 2 === 0) {
+  console.log(num, "is Even");
+} else {
+  console.log(num, "is Odd");
+}
+
+Multiple Conditions (Else If)
+
+if (age === 18) {
+  console.log("Adult");
+} else if (age === 60) {
+  console.log("Senior");
+} else {
+  console.log("Minor");
+}
+
+💡 Notes:
+
+Shorthand if without {} works, but blocks are recommended.
+
+else if chains are cleaner than multiple separate if statements.
+
+Ternary Operator
+
+let result = age >= 18 ? "adult" : "minor";
+console.log(result);
+
+age >= 18 ? console.log("adult") : console.log("minor");
+
+💡 Notes:
+
+Compact alternative to if...else.
+
+Use for simple expressions; avoid for complex logic.
+
+Switch Statement
+
+let day = 3; // 1 = Monday, 2 = Tuesday, ...
+
+switch(day) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  case 4:
+    console.log("Thursday");
+    break;
+  case 5:
+    console.log("Friday");
+    break;
+  case 6:
+    console.log("Saturday");
+    break;
+  case 7:
+    console.log("Sunday");
+    break;
+  default:
+    console.log("Invalid day");
+}
+
+💡 Notes:
+
+Each case must end with a break to prevent fall-through.
+
+default runs if no cases match.
+
+Use switch when checking multiple exact values for a single variable.
+
+📊 Quick Reference Tables
+
+Logical Operators
+
+| Operator | Meaning | Example         | Result  |         |        |
+| -------- | ------- | --------------- | ------- | ------- | ------ |
+| `&&`     | AND     | `true && false` | `false` |         |        |
+| `\|\|`   | OR      | \`true          |         | false\` | `true` |
+| `!`      | NOT     | `!true`         | `false` |         |        |
+
+Conditional Statements
+
+| Statement   | Use Case                        | Example                               |
+| ----------- | ------------------------------- | ------------------------------------- |
+| `if`        | Run code when condition is true | `if (x > 5) { ... }`                  |
+| `if...else` | Run one block or another        | `if (x>5) {...} else {...}`           |
+| `else if`   | Check multiple conditions       | `if (x>10) {...} else if (x>5) {...}` |
+| `switch`    | Cleaner multiple exact matches  | `switch(x){case 1:...}`               |
+
+Ternary Operator
+
+| Syntax                      | Example                         | Result    |
+| --------------------------- | ------------------------------- | --------- |
+| `condition ? expr1 : expr2` | `age >= 18 ? "adult" : "minor"` | `"adult"` |
+
+📝 Summary
+
+This file demonstrates:
+
+Logical operators (&&, ||, !)
+
+Conditional statements (if, if...else, else if)
+
+Ternary operator (? :)
+
+Switch statement (switch ... case ... default)
+
+💡 Inline notes are added for clarity and best practices, e.g., shorthand if usage warning and ternary
+
+
+```

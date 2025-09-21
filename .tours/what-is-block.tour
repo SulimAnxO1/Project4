@@ -286,6 +286,16 @@
       "file": "practice.js",
       "description": "Can see the typeof using this. It prints string.",
       "line": 17
+    },
+    {
+      "file": "logicalop.js",
+      "description": "This isn't recommended always use blocks!!",
+      "line": 80
+    },
+    {
+      "file": "logicalop.js",
+      "description": "Different version of if else.If only used for strings then okay else not recommended to use.",
+      "line": 87
     }
   ],
   "ref": "main"
