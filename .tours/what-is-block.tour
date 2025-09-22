@@ -268,6 +268,16 @@
       "line": 107
     },
     {
+      "file": "logicalop.js",
+      "description": "This isn't recommended always use blocks!!",
+      "line": 80
+    },
+    {
+      "file": "logicalop.js",
+      "description": "Different version of if else.If only used for strings then okay else not recommended to use.",
+      "line": 87
+    },
+    {
       "file": "practice.js",
       "description": "Can see the typeof using this. It prints object.",
       "line": 16,
@@ -288,14 +298,9 @@
       "line": 17
     },
     {
-      "file": "logicalop.js",
-      "description": "This isn't recommended always use blocks!!",
-      "line": 80
-    },
-    {
-      "file": "logicalop.js",
-      "description": "Different version of if else.If only used for strings then okay else not recommended to use.",
-      "line": 87
+      "file": "practice.js",
+      "description": "prompt() is similar to alert(), but instead of just showing a message, it allows the user to input a value. Whatever the user types will be stored in the variable (name in this case). If the user clicks Cancel, the result will be null.",
+      "line": 26
     }
   ],
   "ref": "main"
