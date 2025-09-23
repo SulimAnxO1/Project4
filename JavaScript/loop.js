@@ -134,3 +134,24 @@ for (let key in student) {
 for (let key in student) {
   console.log(key, "=", student[key]);
 }
+
+// Infinite Loop
+
+/* 
+❌ Infinite Loop Example (Do NOT use in real programs)
+An infinite loop never ends because the condition always stays true.
+This can freeze your program, crash a website, or overload the system.
+*/
+
+/*
+for (let i = 1; i >= 0; i++) {
+console.log("i =", i);
+}
+*/
+
+/* 
+Explanation:
+i starts at 1
+Condition: i >= 0 → always true because i keeps increasing (1, 2, 3, ...)
+Since the condition never becomes false, the loop never stops. 
+*/

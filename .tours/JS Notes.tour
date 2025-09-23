@@ -3,27 +3,27 @@
   "title": "JS notes",
   "steps": [
     {
-      "file": "firstjs.js",
+      "file": "/JavaScript/firstjs.js",
       "description": "console.log (\"text\"); this is used to print a message.",
       "line": 1
     },
     {
-      "file": "firstjs.js",
+      "file": "/JavaScript/firstjs.js",
       "description": "alert(\"text\"); this is used for popups on websites.",
       "line": 2
     },
     {
-      "file": "firstjs.js",
+      "file": "/JavaScript/firstjs.js",
       "description": "fullName is a key and MX is a value. Note \r\n🐪 Naming Conventions\r\nStyle\t    Example\t  Valid in JS?\t   Notes\r\ncamelCase\tfullName\t✅ Yes\t  ✅ Common for variables & functions\r\nPascalCase\tFullName\t✅ Yes\t  ✅ Used for classes/constructors\r\nsnake_case\tfull_name\t✅ Yes\t  Rare in JS, but valid\r\nkebab-case\tfull-name\t❌ No\t  ❌ Not allowed in variables\r\nlowercase\tfullname\t✅ Yes\t  Valid but less readable",
       "line": 3
     },
     {
-      "file": "firstjs.js",
+      "file": "/JavaScript/firstjs.js",
       "description": "Let - a Variable that cannot be re-declared but can be updated. (A block scope variable)",
       "line": 5
     },
     {
-      "file": "firstjs.js",
+      "file": "/JavaScript/firstjs.js",
       "description": "added to update the age from 22 to 24 ",
       "line": 7
     },

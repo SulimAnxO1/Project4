@@ -773,12 +773,3 @@ Always verify types before performing operations.
 
 Use meaningful object keys for readability.
 ```
-
-<details>
-<summary>See Example Code</summary>
-
-```js
-let a = 5;
-let b = 2;
-console.log(a + b); // 7
-```
