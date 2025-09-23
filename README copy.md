@@ -78,5 +78,5 @@ Use prompt() for interactive exercises.
 💡 Pro Tips:
 Use console.log() during development and remove unnecessary alerts before production.
 
-</details>
+
 ```
