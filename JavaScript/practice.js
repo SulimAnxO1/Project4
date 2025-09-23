@@ -1,4 +1,4 @@
-// Parctice 1
+// Practice 1
 // Task 1
 const product = {
   title: "Ball Pen",
@@ -20,7 +20,7 @@ const profile = {
 console.log(typeof profile);
 console.log(typeof profile["username"]);
 
-// Parctice 2
+// Practice 2
 // Task 1
 
 let name = prompt("Hello");
@@ -54,7 +54,7 @@ if (score >= 90 && score <= 100) {
 }
 console.log("Your grade according to your score :", grade);
 
-// Parctice 3
+// Practice 3
 // Task 1
 
 for (let i = 0; i <= 100; i++) {
@@ -79,7 +79,7 @@ while (userNumb !== gameNumb) {
 }
 console.log("Great you got it right!!");
 
-// Parctice 4
+// Practice 4
 // Task 1
 
 let fullName = prompt("enter your username");
