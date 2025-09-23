@@ -72,11 +72,9 @@ while (userNum != gameNum) {
 }
 console.log("Great you got it right!!");
 
-/*
-let gameNum = "69";
-let userNum = prompt("Guess the Game Number :");
-while (userNum !== gameNum) {
+let gameNumb = "69";
+let userNumb = prompt("Guess the Game Number :");
+while (userNumb !== gameNumb) {
   userNum = prompt("Wrong!! Try again!");
 }
 console.log("Great you got it right!!");
-*/
