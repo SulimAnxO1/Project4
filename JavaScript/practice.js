@@ -53,3 +53,30 @@ if (score >= 90 && score <= 100) {
   grade = "F";
 }
 console.log("Your grade according to your score :", grade);
+
+// Parctice 3
+// Task 1
+
+for (let i = 0; i <= 100; i++) {
+  if (i % 2 === 0) {
+    console.log("i", i);
+  }
+}
+
+// Task 2
+
+let gameNum = 69;
+let userNum = prompt("Guess the Game Number :");
+while (userNum != gameNum) {
+  userNum = prompt("Wrong!! Try again!");
+}
+console.log("Great you got it right!!");
+
+/*
+let gameNum = "69";
+let userNum = prompt("Guess the Game Number :");
+while (userNum !== gameNum) {
+  userNum = prompt("Wrong!! Try again!");
+}
+console.log("Great you got it right!!");
+*/
