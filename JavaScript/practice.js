@@ -85,3 +85,22 @@ console.log("Great you got it right!!");
 let fullName = prompt("enter your username");
 let userName = "@" + fullName + fullName.length;
 console.log(userName);
+
+// Practice 5
+// Task 1
+
+let items = [250, 645, 300, 900, 50];
+let i = 0;
+for (let val of items) {
+  console.log(`value without ${i} = ${val}`);
+  let offer = val / 10;
+  items[i] = items[i] - offer;
+  console.log(`value after offer = ${items[i]}`);
+  i++;
+}
+let item = [250, 645, 300, 900, 50];
+for (let j = 0; j < item.length; j++) {
+  let offer = item[j] / 10;
+  item[j] -= offer;
+}
+console.log(item);
