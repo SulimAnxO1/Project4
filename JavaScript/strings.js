@@ -70,6 +70,6 @@ console.log(str9.replaceAll("lo", "p")); // Help (Replace all similar values)
 console.log(str9.charAt(4)); // o (Find character value)
 
 let str0 = "Bad";
-str0.replace("d", "t"); // doesnt change original strings cause its immutable
+str0.replace("d", "t"); // doesn't change original strings cause its immutable
 str0 = str0.replace("d", "t"); // now it changes
 console.log(str0); // Bat
