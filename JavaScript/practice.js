@@ -78,3 +78,10 @@ while (userNumb !== gameNumb) {
   userNum = prompt("Wrong!! Try again!");
 }
 console.log("Great you got it right!!");
+
+// Parctice 4
+// Task 1
+
+let fullName = prompt("enter your username");
+let userName = "@" + fullName + fullName.length;
+console.log(userName);
