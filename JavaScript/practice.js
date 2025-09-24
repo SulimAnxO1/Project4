@@ -119,3 +119,85 @@ console.log(companies1.shift());
 console.log(companies1.splice(1, 1, "Old"));
 console.log(companies1.push("Amazon"));
 console.log(companies1);
+
+// Practice 6
+// Task 1
+
+// function
+function countVowels(str) {
+  let count = 0;
+  for (const char of str) {
+    if (
+      char === "a" ||
+      char === "e" ||
+      char === "i" ||
+      char === "o" ||
+      char === "u"
+    ) {
+      count++;
+    }
+  }
+  return count;
+}
+
+// Arrow Function
+console.log(countVowels("Sulaiman")); // 4
+
+const countVow = (str) => {
+  let count = 0;
+  for (const char of str) {
+    if (
+      char === "a" ||
+      char === "e" ||
+      char === "i" ||
+      char === "o" ||
+      char === "u"
+    ) {
+      count++;
+    }
+  }
+  return count;
+};
+
+console.log(countVow("Sulaiman")); // 4
+
+// Task 2
+
+let arr0 = [1, 2, 3, 4, 5];
+
+let calcSquare = (i) => {
+  let a = i * i;
+  console.log(a);
+};
+arr0.forEach(calcSquare);
+
+// alternative
+arr0.forEach((i) => {
+  let a = i * i;
+  console.log(a);
+});
+
+// Task 2
+
+let marks = [97, 65, 33, 50, 99, 95, 85];
+let topper = marks.filter((i) => {
+  return i > 90;
+});
+console.log(topper);
+
+let n = prompt("Enter your Score");
+let array0 = [];
+for (let i = 1; i <= n; i++) {
+  array0[i - 1] = i;
+}
+console.log(array0);
+
+let sum1 = array0.reduce((res, cur) => {
+  return res + cur;
+});
+console.log("sum =", sum);
+
+let factorial = array0.reduce((res, cur) => {
+  return res + cur;
+});
+console.log("factorial =", factorial); // 1,...n is call factorial
