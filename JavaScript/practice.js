@@ -104,3 +104,18 @@ for (let j = 0; j < item.length; j++) {
   item[j] -= offer;
 }
 console.log(item);
+
+// Practice 6
+// Task 1
+
+let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+let arr = companies.splice(0, 1);
+let arr1 = companies.splice(1, 1, "Ola");
+let arr2 = companies.splice(5, 0, "Amazon");
+console.log(companies);
+
+let companies1 = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+console.log(companies1.shift());
+console.log(companies1.splice(1, 1, "Old"));
+console.log(companies1.push("Amazon"));
+console.log(companies1);
