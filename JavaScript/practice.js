@@ -195,9 +195,31 @@ console.log(array0);
 let sum1 = array0.reduce((res, cur) => {
   return res + cur;
 });
-console.log("sum =", sum);
+console.log("sum =", sum1);
 
 let factorial = array0.reduce((res, cur) => {
   return res + cur;
-});
+}, 0);
 console.log("factorial =", factorial); // 1,...n is call factorial
+
+// Practice 7
+// Task 1
+
+let h2 = document.querySelector("h2");
+console.dir(h2.innerText);
+
+h2.innerText = h2.innerText + "From Sulaiman Sufian"; // concatenate
+console.dir(h2.innerText);
+
+// task
+
+let divs = document.querySelectorAll(".box");
+console.log(divs);
+divs[0].innerText = "0";
+divs[1].innerText = "1";
+divs[2].innerText = "2";
+
+for (div of divs) {
+  div.innerText = `new value ${ii}`;
+  ii++;
+}
