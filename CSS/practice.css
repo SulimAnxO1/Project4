@@ -13,3 +13,11 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.content {
+    color: antiquewhite;
+}
+
+.newContent {
+    background-color: whitesmoke;
+}

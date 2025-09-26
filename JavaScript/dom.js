@@ -1,4 +1,7 @@
 //DOM - Document Object Model
+
+// const { createElement } = require("react");
+
 // DOM objects are called nodes
 console.log(window);
 console.log(window.document);
@@ -64,3 +67,45 @@ console.dir((div.innerHTML = "<div><h1>D</h1></div>")); // changes the HTML code
 let hide = document.querySelector(".Heading");
 console.dir(hide.innerText); // prints nothing cause the content is hidden
 console.dir(hide.textContent); // show the hidden text content
+
+let dox = document.querySelector("#dox");
+console.log(dox);
+
+let id = dox.getAttribute("id"); //used to print attribute id
+console.log(id);
+
+let name = dox.getAttribute("name"); //used to print attribute name
+console.log(name);
+
+let para = document.querySelector("p");
+console.log(para.getAttribute("class"));
+
+console.log(para.setAttribute("class", "originalPara")); // used to change or set attribute class,id, etc
+console.log(para.getAttribute("class"));
+
+console.log(dox);
+console.log(dox.style); // prints all style object
+
+// CSS changes in JS
+dox.style.backgroundColor = "White";
+dox.style.fontSize = "20px";
+dox.innerText = "Hello!";
+
+// Insert Element
+let newButton = document.createElement("button");
+newButton.innerText = "click";
+newButton.style.backgroundColor = "Red";
+newButton.style.color = "white";
+console.log(newButton);
+dox.append(newButton); // Add newButton inside div but After hello
+dox.prepend(newButton); // Add newButton inside div but before hello
+dox.before(newButton); // Add newButton before div
+dox.after(newButton); // Add newButton after div
+
+// para.remove(); // removes element
+
+let body = document.body;
+body.prepend(newButton);
+
+para.classList.add("hzero"); // used to add class
+para.classList.remove("hzero"); // used to remove class

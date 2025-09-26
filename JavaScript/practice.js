@@ -211,7 +211,7 @@ console.dir(h2.innerText);
 h2.innerText = h2.innerText + "From Sulaiman Sufian"; // concatenate
 console.dir(h2.innerText);
 
-// task
+// task 2
 
 let divs = document.querySelectorAll(".box");
 console.log(divs);
@@ -223,3 +223,21 @@ for (div of divs) {
   div.innerText = `new value ${ii}`;
   ii++;
 }
+
+// Practice 8
+// Task 1
+
+let newButton = document.createElement("button");
+newButton.innerText = "click";
+newButton.style.backgroundColor = "Red";
+newButton.style.color = "white";
+
+let body = document.body;
+body.prepend(newButton);
+//Alternative
+document.querySelector("body").prepend(newButton);
+
+// Task 2
+
+let para = document.querySelector("p");
+para.classList.add(newClass);
